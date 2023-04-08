@@ -1,0 +1,247 @@
+<html>
+<head>
+    <title> Restaurants in Kingston</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+<body>
+    <div class="banner">
+        <div class="navbar">
+        <li></li>
+        <img src="restwatch.png" class="logo">
+            <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#cuisine">Cuisine</a></li>
+                        <li><a href="#restaurants">Restaurants</a></li>
+                        <li><a href="#contact-us">Contact</a></li>
+            </ul>
+        </div>
+                <div class="content"> 
+              
+        
+        
+            <h1>DISCOVER RESTAURANTS ALL ACROSS JAMAICA</h1>
+            <p>taste authentic jamaican cuisine</p>
+        </div>
+    </div>
+    
+    
+  <!--Cuisine-->  
+
+    <section id="cuisine">
+    <div class="title-text">
+    <p>CUISINE</p>
+    <h1>Jamaican Cuisine</h1>
+    </div>
+    
+        <div class="full-img" id="fullImgBox">
+            <img src="ackee.jpg" id="fullImg">
+            <span onclick="closeFullImg()">X</span>
+        </div>
+        
+        <div class="img-gallery">
+            
+          
+            
+            <img src="ackee.jpg" onclick="openFullImg (this.src)">
+            <img src="curriedgoat.jpg" onclick="openFullImg (this.src)">
+            <img src="jerkchicken.jpg" onclick="openFullImg (this.src)">
+            <img src="jerkpork.jpg" onclick="openFullImg (this.src)">
+            <img src="oxtail.jpg" onclick="openFullImg (this.src)">
+            <img src="patty 2.jpg" onclick="openFullImg (this.src)">
+            
+        </div>
+       
+    <script>
+        var fullImgBox = document.getElementById("fullImgBox");
+        var fullImg = document.getElementById("fullImg");
+        
+        function openFullImg(pic){
+            fullImgBox.style.display = "flex";
+            fullImg.src = pic;
+        }
+        
+        function closeFullImg(){
+            fullImgBox.style.display = "none";
+        }
+        var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+        </script>    
+        
+        <div class="footer">
+            <p>ackee &amp; saltfish | curried goat | jerked chicken <br> jerked pork |
+            oxtail | patties</p>
+        </div>    
+    </section>
+    <!--Restaurants-->
+    <section id="restaurants">
+    <div class="title-text2">
+    <p>RESTAURANTS</p>
+    <h1>Jamaican Restaurants</h1>
+    </div>
+    
+     <div class="container">
+         
+         
+     
+         
+         
+         <div class="box-container">
+             
+             <div class = "box">
+                 <img src = "icon.png" alt="">
+                 <h3>Tracks &amp; Records</h3>
+                 <p>Contact: 1876-906-3903</p>
+                 
+         </div>
+             
+             <div class = "box">
+                 <img src = "icon.png" alt="">
+                 <h3>Murray's Fish &amp; Jerk Hut</h3>
+                 <p>Contact: 1876-867-6572</p>
+                 
+         </div>
+             
+             <div class = "box">
+                 <img src = "icon.png" alt="">
+                 <h3>Island Grill</h3>
+                 <p>Contact: 1876-925-1469</p>
+                 
+         </div>
+             <div class = "box">
+                 <img src = "icon.png" alt="">
+                 <h3>Island Vibes</h3>
+                 <p>Contact: 1876-669-7330</p>
+                 
+         </div>
+             
+             <div class = "box">
+                 <img src = "icon.png" alt="">
+                 <h3>Lorna's Catering</h3>
+                 <p>Contact: 1876-978-5865</p>
+                 
+         </div>
+             
+             <div class = "box">
+                 <img src = "icon.png" alt="">
+                 <h3>Roots 21 Kitchen</h3>
+                 <p>1876-398-7722</p>
+                 
+         </div>
+     </div>   
+          
+     </div>      
+           
+       
+    <script>
+        
+        var scroll = new SmoothScroll('a[href*="#"]', {
+	speed: 1000,
+	speedAsDuration: true
+});
+        </script>    
+        
+        
+        
+    </section> 
+    
+     <section id="contact-us">
+    <div class="title-text3">
+    <h1>CONTACT US</h1>
+        <p>Ask us Questions!</p>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Send your request</h3>
+                <form>
+                     <div class="input-row">
+                     <div class="input-group"> 
+                    <label>Name:</label>
+                  <input type="text" placeholder="John Brown">
+                </div>
+                  <div class="input-group">
+                            <label>Phone:</label>
+                            <input type="text" placeholder="1876-XXX-XXXX">
+                            
+            </div>   
+                    </div>
+                   <div class="input-row">
+                        <div class="input-group">
+                            <label>Email:</label>
+                            <input type="text" placeholder="johnbrown@gmail.com">
+                            
+            </div>
+                        <div class="input-group">
+                            <label>Subject:</label>
+                            <input type="text" placeholder="Product Demo">
+                            </div> 
+                    </div>
+                    
+                    <label>Message:</label>
+                    <textarea rows="5" placeholder="Your Message"></textarea>
+                        
+                    <button type="submit">SEND</button>
+         </form>
+            </div>
+                    <div class ="contact-right">
+                        <h3>Reach us</h3>
+                        
+                        <table>
+                            <tr>
+                                <td>Email:</td>
+                                <td>contactus@example.com</td>
+                            </tr>
+                            <tr>
+                                <td>Phone:</td>
+                                <td>1876-XXX-XXXX</td>
+                            </tr>
+                            <tr>
+                                <td>Address: </td>
+                                <td>123, Digi Street, JA</td>
+                            </tr>
+                            
+                        </table>
+            
+                   
+                        
+                           
+                            
+            </div>
+                        
+                            
+                            
+                            
+            
+                            
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+</body>
+</html>
